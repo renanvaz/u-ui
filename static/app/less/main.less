@@ -17,9 +17,7 @@
     color: #7d7d7d;
 }
 
-h1 {
-    font-size: 25px;
-    display: inline-block;
+h1, p {
     margin: 0;
 }
 
@@ -51,12 +49,12 @@ body {
         > header {
             margin-bottom: 40px;
 
-            .logo {
+            > .logo {
                 font: 15px 'Arial';
                 display: block;
             }
 
-            .first {
+            > .first {
                 display: inline-block;
                 text-indent: -1px;
                 font-size: 30px;
@@ -109,6 +107,15 @@ body {
                 > h1 {
                     font-size: 18px;
                     font-weight: normal;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    position: absolute;
+                    left: 40px;
+                    overflow: hidden;
+                    right: 40px;
+                    top: 0;
+                    bottom: 0;
+                    line-height: 40px;
                 }
 
                 > .fa {
@@ -147,10 +154,6 @@ body {
                         display: inline-block;
                     }
 
-                    &.open .snippet {
-                        height: 140px;
-                    }
-
                     > .fa {
                         display: none;
                         font-size: 14px;
@@ -165,9 +168,17 @@ body {
                         height: 0px;
                         transition: height .4s ease-out;
 
+                        &.open {
+                            height: 156px;
+                        }
+
                         > p {
                             font-family: 'Courier New';
                             font-size: 13px !important;
+                            margin: 0;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
 
                             &.highlight {
                                 background-color: rgb(254, 255, 202);

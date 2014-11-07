@@ -41,7 +41,7 @@
                     <h1>Report</h1>
                 </header>
 
-                <article class="container-test open" data-u="pass">
+                <article class="container-test open" data-u="error">
                     <header>
                         <span class="fa fa-times red"></span>
                         <span class="fa fa-check green"></span>
@@ -50,7 +50,7 @@
                         <span class="fa fa-minus right gray"></span>
                     </header>
                     <section class="content">
-                        <article class="container-test open" data-u="pass">
+                        <article class="container-test open" data-u="error">
                             <header>
                                 <span class="fa fa-times red"></span>
                                 <span class="fa fa-check green"></span>
@@ -63,18 +63,27 @@
                                     <span class="fa fa-times red"></span>
                                     <span class="fa fa-check green"></span>
                                     Testando
+
+                                    <div class="snippet open">
+                                        <p><span>2</span></p>
+                                        <p><span>3</span>U::group('Testando&nbsp;o&nbsp;roteamento&nbsp;da&nbsp;requisição.',&nbsp;function(){</p>
+                                        <p><span>4</span>&nbsp;&nbsp;&nbsp;&nbsp;$isGET&nbsp;=&nbsp;(bool)&nbsp;$_GET;</p>
+                                        <p><span>5</span></p>
+                                        <p class="highlight"><span>6</span>&nbsp;&nbsp;&nbsp;&nbsp;U::assert('O&nbsp;método&nbsp;é&nbsp;GET',&nbsp;$isGET);</p>
+                                        <p><span>7</span>&nbsp;&nbsp;&nbsp;&nbsp;U::assert('O&nbsp;status&nbsp;da&nbsp;requisição&nbsp;tem&nbsp;que&nbsp;ser&nbsp;200',&nbsp;TRUE);</p>
+                                    </div>
                                 </div>
                                 <div data-u="pass">
                                     <span class="fa fa-times red"></span>
                                     <span class="fa fa-check green"></span>
                                     Testando denovo
                                 </div>
-                                <div data-u="pass">
+                                <div data-u="error">
                                     <span class="fa fa-times red"></span>
                                     <span class="fa fa-check green"></span>
                                     Testando 3
                                 </div>
-                                <article class="container-test " data-u="pass">
+                                <article class="container-test" data-u="error">
                                     <header>
                                         <span class="fa fa-times red"></span>
                                         <span class="fa fa-check green"></span>
@@ -83,7 +92,7 @@
                                         <span class="fa fa-minus right gray"></span>
                                     </header>
                                     <section class="content">
-                                        <div data-u="pass">
+                                        <div data-u="error">
                                             <span class="fa fa-times red"></span>
                                             <span class="fa fa-check green"></span>
                                             Testando
