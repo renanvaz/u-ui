@@ -1,56 +1,20 @@
-<<<<<<< HEAD
 /**
  *  CODE
  */
 
 (function () {
-  'use strict';
-
-=======
-(function () {
     'use strict';
 
-    var groups = document.querySelectorAll('.container-test');
-    var items = document.querySelectorAll('.container-test > .content > div');
-    var i;
-    var to;
+    var uReport = {"report":[{"description":"Test examples\/Core.u.php","report":[{"description":"Description of this group test.","report":[{"description":"Testando","status":false,"trace":[{"highlight":false,"line":1,"code":"&lt;?php\n"},{"highlight":false,"line":2,"code":"\n"},{"highlight":false,"line":3,"code":"U::group('Description of this group test.', function(){\n"},{"highlight":true,"line":4,"code":"    U::assert('Testando', FALSE);\n"},{"highlight":false,"line":5,"code":"    U::assert('Testando denovo', TRUE);\n"}]},{"description":"Testando denovo","status":true,"trace":[{"highlight":false,"line":1,"code":"&lt;?php\n"},{"highlight":false,"line":2,"code":"\n"},{"highlight":false,"line":3,"code":"U::group('Description of this group test.', function(){\n"},{"highlight":false,"line":4,"code":"    U::assert('Testando', FALSE);\n"},{"highlight":true,"line":5,"code":"    U::assert('Testando denovo', TRUE);\n"},{"highlight":false,"line":6,"code":"    U::assert('Testando 3', FALSE);\n"}]},{"description":"Testando 3","status":false,"trace":[{"highlight":false,"line":2,"code":"\n"},{"highlight":false,"line":3,"code":"U::group('Description of this group test.', function(){\n"},{"highlight":false,"line":4,"code":"    U::assert('Testando', FALSE);\n"},{"highlight":false,"line":5,"code":"    U::assert('Testando denovo', TRUE);\n"},{"highlight":true,"line":6,"code":"    U::assert('Testando 3', FALSE);\n"},{"highlight":false,"line":7,"code":"\n"}]},{"description":"Description inner.","report":[{"description":"Testando","status":false,"trace":[{"highlight":false,"line":5,"code":"    U::assert('Testando denovo', TRUE);\n"},{"highlight":false,"line":6,"code":"    U::assert('Testando 3', FALSE);\n"},{"highlight":false,"line":7,"code":"\n"},{"highlight":false,"line":8,"code":"    U::group('Description inner.', function(){\n"},{"highlight":true,"line":9,"code":"        U::assert('Testando', FALSE);\n"},{"highlight":false,"line":10,"code":"        U::assert('Testando denovo', TRUE);\n"}]},{"description":"Testando denovo","status":true,"trace":[{"highlight":false,"line":6,"code":"    U::assert('Testando 3', FALSE);\n"},{"highlight":false,"line":7,"code":"\n"},{"highlight":false,"line":8,"code":"    U::group('Description inner.', function(){\n"},{"highlight":false,"line":9,"code":"        U::assert('Testando', FALSE);\n"},{"highlight":true,"line":10,"code":"        U::assert('Testando denovo', TRUE);\n"},{"highlight":false,"line":11,"code":"        U::assert('Testando 3', FALSE);\n"}]},{"description":"Testando 3","status":false,"trace":[{"highlight":false,"line":7,"code":"\n"},{"highlight":false,"line":8,"code":"    U::group('Description inner.', function(){\n"},{"highlight":false,"line":9,"code":"        U::assert('Testando', FALSE);\n"},{"highlight":false,"line":10,"code":"        U::assert('Testando denovo', TRUE);\n"},{"highlight":true,"line":11,"code":"        U::assert('Testando 3', FALSE);\n"},{"highlight":false,"line":12,"code":"    });\n"}]}]}]},{"description":"Description 2 of this group test.","report":[{"description":"Testando","status":true,"trace":[{"highlight":false,"line":12,"code":"    });\n"},{"highlight":false,"line":13,"code":"});\n"},{"highlight":false,"line":14,"code":"\n"},{"highlight":false,"line":15,"code":"U::group('Description 2 of this group test.', function(){\n"},{"highlight":true,"line":16,"code":"    U::assert('Testando', TRUE);\n"},{"highlight":false,"line":17,"code":"    U::assert('Testando denovo', FALSE);\n"}]},{"description":"Testando denovo","status":false,"trace":[{"highlight":false,"line":13,"code":"});\n"},{"highlight":false,"line":14,"code":"\n"},{"highlight":false,"line":15,"code":"U::group('Description 2 of this group test.', function(){\n"},{"highlight":false,"line":16,"code":"    U::assert('Testando', TRUE);\n"},{"highlight":true,"line":17,"code":"    U::assert('Testando denovo', FALSE);\n"},{"highlight":false,"line":18,"code":"    U::assert('Testando 3', TRUE);\n"}]},{"description":"Testando 3","status":true,"trace":[{"highlight":false,"line":14,"code":"\n"},{"highlight":false,"line":15,"code":"U::group('Description 2 of this group test.', function(){\n"},{"highlight":false,"line":16,"code":"    U::assert('Testando', TRUE);\n"},{"highlight":false,"line":17,"code":"    U::assert('Testando denovo', FALSE);\n"},{"highlight":true,"line":18,"code":"    U::assert('Testando 3', TRUE);\n"},{"highlight":false,"line":19,"code":"\n"}]},{"description":"Description inner.","report":[{"description":"Testando","status":true,"trace":[{"highlight":false,"line":17,"code":"    U::assert('Testando denovo', FALSE);\n"},{"highlight":false,"line":18,"code":"    U::assert('Testando 3', TRUE);\n"},{"highlight":false,"line":19,"code":"\n"},{"highlight":false,"line":20,"code":"    U::group('Description inner.', function(){\n"},{"highlight":true,"line":21,"code":"        U::assert('Testando', TRUE);\n"},{"highlight":false,"line":22,"code":"        U::assert('Testando denovo', TRUE);\n"}]},{"description":"Testando denovo","status":true,"trace":[{"highlight":false,"line":18,"code":"    U::assert('Testando 3', TRUE);\n"},{"highlight":false,"line":19,"code":"\n"},{"highlight":false,"line":20,"code":"    U::group('Description inner.', function(){\n"},{"highlight":false,"line":21,"code":"        U::assert('Testando', TRUE);\n"},{"highlight":true,"line":22,"code":"        U::assert('Testando denovo', TRUE);\n"},{"highlight":false,"line":23,"code":"        U::assert('Testando 3', TRUE);\n"}]},{"description":"Testando 3","status":true,"trace":[{"highlight":false,"line":19,"code":"\n"},{"highlight":false,"line":20,"code":"    U::group('Description inner.', function(){\n"},{"highlight":false,"line":21,"code":"        U::assert('Testando', TRUE);\n"},{"highlight":false,"line":22,"code":"        U::assert('Testando denovo', TRUE);\n"},{"highlight":true,"line":23,"code":"        U::assert('Testando 3', TRUE);\n"},{"highlight":false,"line":24,"code":"    });\n"}]}]}]}]}]};
 
-    for (i = 0; i < groups.length; i++) {
-        groups[i].querySelector('header').addEventListener('click', function(e){
-            var group = e.currentTarget.parentNode;
-            var section = group.querySelector('section');
+    Vue.component('u-group', {
+        template: document.querySelector('#u-group-template').innerHTML
+    });
 
-            if (group.classList.contains('open')) {
-                section.style.height = (section.scrollHeight - 50)+'px';
-                setTimeout(function(section){ section.style.height = '0px'; }, 0, section);
-                group.classList.remove('open');
-            } else {
-                group.classList.add('open');
-                section.style.height = section.scrollHeight+'px';
-
-                section.addEventListener('transitionend', function(e){
-                    if (e.currentTarget.style.height !== '0px') {
-                        e.currentTarget.style.height = 'auto';
-                    }
-                });
-            }
-        });
-    }
-
-    for (i = 0; i < items.length; i++) {
-        items[i].addEventListener('mouseover', function(e){
-            var item = e.currentTarget;
-
-            clearTimeout(to);
-            to = setTimeout(function(item){ item.classList.add('open'); }, 400, item);
-        });
-
-        items[i].addEventListener('mouseleave', function(e){
-            var item = e.currentTarget;
-
-            clearTimeout(to);
-            item.classList.remove('open');
-        });
-    }
->>>>>>> 67dc364383069937ad1bb81fd96edefeff410d20
+    var demo = new Vue({
+        el: '#app',
+        data: {
+            uReport: uReport
+        }
+    })
 })();
