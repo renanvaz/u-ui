@@ -57,7 +57,7 @@
                             {{ description }}
 
                             <div class="snippet" v-class="open: !r.status">
-                                <p v-repeat="r.trace" v-class="highlight: highlight"><span>{{ line }}</span> <code v-html="code"></code></p>
+                                <p v-class="highlight: highlight" v-repeat="r.trace"><span>{{ line }}</span> <code v-html="code"></code></p>
                             </div>
                         </div>
                     </template>
