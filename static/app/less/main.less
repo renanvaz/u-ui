@@ -110,6 +110,16 @@ body {
                 }
             }
 
+            &[data-u="error"] > .fa-times {
+                display: inline-block;
+                color: @nok;
+            }
+
+            &[data-u="pass"] > .fa-check {
+                display: inline-block;
+                color: @ok;
+            }
+
             .container-test {
                 overflow: hidden;
                 margin-top: 10px;
@@ -131,14 +141,6 @@ body {
                         height: auto;
                         display: block;
                     }
-                }
-
-                &[data-u="error"] > header > .fa-times {
-                    display: inline-block;
-                }
-
-                &[data-u="pass"] > header > .fa-check {
-                    display: inline-block;
                 }
 
                 > header {
@@ -188,14 +190,6 @@ body {
 
                         &:first-child {
                             border-top: solid 0px;
-                        }
-
-                        &[data-u="error"] > .fa-times {
-                            display: inline-block;
-                        }
-
-                        &[data-u="pass"] > .fa-check {
-                            display: inline-block;
                         }
 
                         > .fa {

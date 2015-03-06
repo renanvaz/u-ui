@@ -31,7 +31,7 @@
     <script type="text/template" id="u-group-template">
         <article class="container-test" v-class="open: opened" v-attr="data-u: status ? 'pass' : 'error'">
             <header v-on="click: opened = !opened">
-                <span class="fa" v-class="fa-times: !status, fa-check: status, red: !status, green: status"></span>
+                <span class="fa" v-class="fa-times: !status, fa-check: status"></span>
                 <h1>{{ description }}</h1>
                 <span class="fa fa-plus right gray"></span>
                 <span class="fa fa-minus right gray"></span>
@@ -44,7 +44,7 @@
 
                     <template v-if="!r.report">
                         <div v-attr="data-u: r.status ? 'pass' : 'error'" v-on="click: r.opened = !r.opened">
-                            <span class="fa" v-class="fa-times: !r.status, fa-check: r.status, red: !r.status, green: r.status"></span>
+                            <span class="fa" v-class="fa-times: !r.status, fa-check: r.status"></span>
                             {{ description }}
 
                             <div class="snippet" v-class="open: r.opened">
