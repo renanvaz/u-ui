@@ -16,7 +16,14 @@
 <body>
     <!-- Main structure -->
     <main id="app">
-        <section class="tests">
+        <section id="summary">
+            <h1>{{ uReport.summary.asserts }} asserts</h1>
+            <div class="bar">
+                <div class="ok" v-style="styleOk">{{ uReport.summary.ok }}</div>
+                <div class="nok" v-style="styleNok">{{ uReport.summary.nok }}</div>
+            </div>
+        </section>
+        <section id="tests">
             <u-group v-repeat="uReport.report"></u-group>
         </section>
     </main>
