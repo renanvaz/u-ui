@@ -17,10 +17,10 @@
     <!-- Main structure -->
     <main id="app">
         <section id="summary">
-            <h1>{{ uReport.summary.asserts }} asserts</h1>
+            <h1>{{ (uReport.summary.asserts.ok + uReport.summary.asserts.nok) }} asserts</h1>
             <div class="bar">
-                <div class="ok" v-style="styleOk">{{ uReport.summary.ok }}</div>
-                <div class="nok" v-style="styleNok">{{ uReport.summary.nok }}</div>
+                <div class="ok" v-style="styleOk">{{ uReport.summary.asserts.ok }}</div>
+                <div class="nok" v-style="styleNok">{{ uReport.summary.asserts.nok }}</div>
             </div>
         </section>
         <section id="tests">
