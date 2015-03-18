@@ -25,7 +25,7 @@
     };
 
     request = new XMLHttpRequest();
-    request.open('GET', 'out.json', true);
+    request.open('GET', 'uReport.json', true);
 
     request.onload = function() {
       if (this.status >= 200 && this.status < 400) {
