@@ -49,7 +49,7 @@
                     <template v-if="!r.report">
                         <div v-attr="data-u: r.status ? 'pass' : 'error'" v-on="click: r.opened = !r.opened">
                             <span class="fa" v-class="fa-times: !r.status, fa-check: r.status"></span>
-                            {{ r.description }}
+                            {{ r.title }}
 
                             <div class="snippet" v-class="open: r.opened">
                                 <p v-repeat="r.trace" v-class="highlight: highlight"><span>{{ line }}</span> <code class="php" v-html="code"></code></p>
